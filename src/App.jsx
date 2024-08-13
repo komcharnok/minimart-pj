@@ -1,7 +1,8 @@
 import Catedropdown from "./components/Home/Category/Category-dropdown/Catedropdown";
 import CartPage from "./pages/Cart-Page/CartPage";
+import ConfirmorderPage from "./pages/ConfirmOrder-Page/ConfirmorderPage";
 import HomePage from "./pages/Home-Page/HomePage";
-import Login from "./pages/Login-Page/LoginPage";
+import LoginPage from "./pages/Login-Page/LoginPage";
 import ProfilePage from "./pages/Profile-Page/ProfilePage";
 
 
@@ -9,11 +10,13 @@ export default function App() {
   return (
     <>
       <div className="flex-1">
-        {/* <HomePage /> */}
+        <HomePage />
         <div className="max-w-[1362px] mx-auto ">
-          {/* <Login/> */}
+          {/* <LoginPage/> */}
+          {/* <ProfilePage /> */}
           {/* <CartPage /> */}
-          <ProfilePage />
+          {/* <ConfirmorderPage/> */}
+
 
 
         </div>

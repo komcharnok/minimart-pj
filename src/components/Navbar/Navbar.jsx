@@ -30,7 +30,7 @@ function Navbar() {
                                 {/* <span className="badge badge-sm indicator-item">8</span> */}
                             </div>
                         </div>
-                        <div
+                        {/* <div
                             tabIndex={0}
                             className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                             <div className="card-body">
@@ -40,7 +40,7 @@ function Navbar() {
                                     <button className="btn btn-primary btn-block">View cart</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div>
                         <button className='btn btn-outline rounded-3xl'>เข้าสู่ระบบ</button>
