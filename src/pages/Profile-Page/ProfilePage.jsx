@@ -9,9 +9,9 @@ import { useState } from 'react'
 function ProfilePage() {
   const [opentap, setOpentap] = useState('money');
   return (
-    <div className='mt-32 xl:w-[1368px]    mx-auto'>
+    <div className='mt-32 xl:w-[1368px]     mx-auto'>
       <div className='sm:flex-row xl:flex xl:justify-between xl:py-6'>
-        <div className='sm:flex-row '>
+        <div className='sm:flex-row  '>
           <div className='flex justify-center'>
             <div className='flex flex-col items-center w-full mx-auto bg-white  gap-3 border-b pb-8 xl:flex-row xl:w-[380px]'>
               <div className="avatar">
@@ -35,20 +35,24 @@ function ProfilePage() {
             <btn onClick={() => setOpentap('checkstatus')} className={`sm:btn sm:btn-active sm:w-[300px] btn btn-active w-[300px] sm:rounded-3xl rounded-3xl xl:w-full  cursor-pointer   h-[54px]  flex items-center text-xl  `}>ตรวจสอบสถานะการจัดส่ง</btn>
             <btn className={`sm:btn sm:btn-warning sm:w-[300px] btn btn-warning w-[300px] sm:rounded-3xl rounded-3xl xl:w-full  cursor-pointer   h-[54px]  flex items-center text-xl `}>ออกจากระบบ</btn>
           </div>
-          
+
+        </div>
+        <div className='flex justify-center'>
+          <div className='w-full sm:w-[400px] lg:w-[900px] xl:w-[973px] h-[439px]  mt-4 bg-white rounded-2xl shadow-xl border'>
+            {/* ยอดดเงินคงเหลือ */}
+            <Money opentap={opentap} />
+
+            {/* ข้อมูลส่วนตัว */}
+            <PvData opentap={opentap} />
+
+            {/* รายการคำสั่งซื้อ */}
+            <Listorder opentap={opentap} />
+
+            {/* ตรวจสอบสถานะการจัดส่ง */}
+            <Statustran opentap={opentap} />
+          </div>
         </div>
 
-        {/* ยอดดเงินคงเหลือ */}
-        <Money opentap={opentap} />
-
-        {/* ข้อมูลส่วนตัว */}
-        <PvData opentap={opentap} />
-
-        {/* รายการคำสั่งซื้อ */}
-        <Listorder opentap={opentap} />
-
-        {/* ตรวจสอบสถานะการจัดส่ง */}
-        <Statustran opentap={opentap} />
 
 
       </div>
