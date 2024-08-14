@@ -3,7 +3,7 @@ import React from 'react'
 function LoginPage() {
   return (
     <div className='mt-32 w-[1368px] h-[620px]  mx-auto  flex justify-center py-6'>
-            <div className="card lg:card-side bg-base-100 shadow-xl w-[1362px] ">
+            <div className="card lg:card-side bg-base-100 border shadow-xl w-[1362px] ">
                 <div className="card-body  w-[681px] p-16  flex  ">
                     <div className='mt-16'>
                         <h2 className="card-title">เข้าสู่ระบบ</h2>

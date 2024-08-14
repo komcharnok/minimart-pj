@@ -10,15 +10,12 @@ export default function App() {
   return (
     <>
       <div className="flex-1">
-        <HomePage />
-        <div className="max-w-[1362px] mx-auto ">
+        {/* <HomePage /> */}
+        <div className="max-w-[1368px] mx-auto ">
           {/* <LoginPage/> */}
-          {/* <ProfilePage /> */}
+          <ProfilePage />
           {/* <CartPage /> */}
           {/* <ConfirmorderPage/> */}
-
-
-
         </div>
       </div>
     </>

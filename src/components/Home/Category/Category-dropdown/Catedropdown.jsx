@@ -19,7 +19,7 @@ function Catedropdown() {
     const handleMouseLeave = () => setSubMenuVisible(null);
 
     return (
-        <div className='h-[74px] flex items-center border-y-2  bg-white shadow-md mt-32'>
+        <div className='fixed top-0 left-0 z-50 h-[74px] w-full flex items-center border-y  bg-white shadow-md mt-24'>
             <div className='w-[1362px] mx-auto '>
                 <div className='relative'>
                     <div className="dropdown dropdown-right relative">
@@ -49,7 +49,7 @@ function Catedropdown() {
                                         key={category.id}
                                         tabIndex={category.id}
                                         role="button"
-                                        className='border-b-2 relative'
+                                        className='border-b relative'
                                         onMouseEnter={() => handleMouseEnter(category.id)}
                                     // onMouseLeave={handleMouseLeave}
                                     >

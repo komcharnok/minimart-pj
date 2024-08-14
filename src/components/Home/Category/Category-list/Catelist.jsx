@@ -57,7 +57,7 @@ function Catelist() {
             <div className='mt-6'>
                 <ul className='flex gap-3 justify-between'>
                     {currentItems.map((item) => (
-                        <li key={item.id} className='relative w-[318px] h-[318px] shadow-2xl'>
+                        <li key={item.id} className='relative w-[318px] h-[318px] border rounded-lg shadow-2xl'>
                             <img
                                 src={item.image}
                                 alt={item.name}

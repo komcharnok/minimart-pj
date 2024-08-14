@@ -61,8 +61,8 @@ function ProductForyou() {
 
                     <div className='flex gap-8 justify-center'>
                         {currentItems.map((item) => (
-                            <div key={item.id} className='w-[318px] h-[530px] bg-white rounded-xl shadow-2xl'>
-                                <figure className='border-b-2 '>
+                            <div key={item.id} className='w-[318px] h-[530px] bg-white rounded-xl border shadow-2xl'>
+                                <figure className='border-b '>
                                     <img
                                         src={item.image}
                                         alt={item.name}
