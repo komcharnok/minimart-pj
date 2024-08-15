@@ -14,7 +14,10 @@ const itemsList = [
 
 function Catelist() {
     const [currentPage, setCurrentPage] = useState(0);
-    const itemsPerPage = 4;
+    const itemsPerPageSm = 2;
+    const itemsPerPageLg = 4;
+    const isSmallScreen = window.innerWidth < 1141;
+    const itemsPerPage = isSmallScreen ? itemsPerPageSm : itemsPerPageLg;
     const totalItems = itemsList.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -35,35 +38,35 @@ function Catelist() {
 
     return (
         <div className='mt-8'>
-            <div className='flex justify-between items-center'>
-                <h1 className='text-4xl font-semibold'>หมวดหมู่สินค้า</h1>
+            <div className='flex justify-between items-center sm:px-4 xl:px-0'>
+                <h1 className='sm:text-[16px] lg:text-4xl font-semibold'>หมวดหมู่สินค้า</h1>
                 <div className='flex gap-3'>
                     <button
                         className='btn btn-outline'
                         onClick={handlePrevious}
-                    // disabled={currentPage === 0}
+                        // disabled={currentPage === 0}
                     >
                         -
                     </button>
                     <button
                         className='btn btn-outline'
                         onClick={handleNext}
-                    // disabled={currentPage === totalPages - 1}
+                        // disabled={currentPage === totalPages - 1}
                     >
                         +
                     </button>
                 </div>
             </div>
             <div className='mt-6'>
-                <ul className='flex gap-3 justify-between'>
+                <ul className='grid grid-cols-2 lg:grid-cols-4 gap-3 lg:w-[268] lg:h-[185px]  sm:px-4 xl:px-0 '>
                     {currentItems.map((item) => (
-                        <li key={item.id} className='relative w-[318px] h-[318px] border rounded-lg shadow-2xl'>
+                        <li key={item.id} className='relative border rounded-lg shadow-2xl'>
                             <img
                                 src={item.image}
                                 alt={item.name}
-                                className='w-full h-full object-cover rounded-lg'
+                                className='sm:w-[183px] sm:h-[183px] lg:w-[268px] lg:h-[185px] xl:w-[333px] xl:h-[187px] object-cover rounded-lg'
                             />
-                            <p className='absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-50 text-white  p-4 font-light'>{item.name}</p>
+                            <p className='absolute bottom-0 left-0 w-full text-center bg-black bg-opacity-50 text-white p-4 font-light'>{item.name}</p>
                         </li>
                     ))}
                 </ul>

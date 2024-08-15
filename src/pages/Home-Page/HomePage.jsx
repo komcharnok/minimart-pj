@@ -6,9 +6,9 @@ import Catedropdown from '../../components/Home/Category/Category-dropdown/Cated
 
 function HomePage() {
   return (
-    <div>
+    <div className='mt-28  xl:w-[1368px] sm:w-[414px] lg:w-[1141px] mx-auto'>
       <Catedropdown />
-      <div className='max-w-[1362px] mx-auto '>
+      <div className=''>
         <Banner />
         <Catelist />
         <ProductForyou />

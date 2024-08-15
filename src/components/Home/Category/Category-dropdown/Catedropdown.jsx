@@ -19,14 +19,14 @@ function Catedropdown() {
     const handleMouseLeave = () => setSubMenuVisible(null);
 
     return (
-        <div className='fixed top-0 left-0 z-50 h-[74px] w-full flex items-center border-y  bg-white shadow-md mt-24'>
+        <div className='fixed top-0 left-0 z-50 h-[74px] w-full flex items-center border-y  bg-white shadow-md mt-16'>
             <div className='w-[1362px] mx-auto '>
                 <div className='relative'>
-                    <div className="dropdown dropdown-right relative">
+                    <div className="dropdown lg:dropdown-right relative">
                         <h2
                             tabIndex={0}
                             role="button"
-                            className="text-xl "
+                            className="text-xl sm:px-4 xl:px-0 "
                             onMouseEnter={() => handleMouseEnter(0)}
                             onMouseLeave={handleMouseLeave}
                         >
@@ -35,7 +35,7 @@ function Catedropdown() {
 
                         <ul
                             tabIndex={0}
-                            className="dropdown-content menu bg-base-100 rounded-box z-[1] w-[281px] h-auto p-4 shadow ml-2"
+                            className="dropdown-content menu bg-base-100 rounded-box z-[1] sm:w-[230px] lg:w-[281px] h-auto p-4 shadow ml-2"
                             onMouseEnter={() => handleMouseEnter(0)}
                         // onMouseLeave={handleMouseLeave}
                         >
@@ -55,18 +55,18 @@ function Catedropdown() {
                                     >
                                         <a className='flex justify-between items-center'>
                                             <div className='flex items-center gap-2'>
-                                                <img src="https://alphabetstu.weebly.com/uploads/5/4/6/5/54650517/9235940_orig.jpg" alt="food" className='w-[46px] h-[46px] rounded-md' />
-                                                <p>{category.title}</p>
+                                                <img src="https://alphabetstu.weebly.com/uploads/5/4/6/5/54650517/9235940_orig.jpg" alt="food" className='sm:hidden lg:block w-[46px] h-[46px] rounded-md' />
+                                                <p className='text-xs'>{category.title}</p>
                                             </div>
                                             <p>3</p>
                                         </a>
                                         <ul
-                                            className={`dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow ml-5 absolute top-0 left-full ${subMenuVisible === category.id ? 'block' : 'hidden'}`}
+                                            className={`dropdown-content menu bg-base-100 rounded-box z-[1] sm:w-32 lg:w-52 p-2 shadow ml-5 absolute top-0 left-full ${subMenuVisible === category.id ? 'block' : 'hidden'}`}
                                             onMouseEnter={() => handleMouseEnter(category.id)}
                                             onMouseLeave={handleMouseLeave}
                                         >
                                             {category.items.map((item, index) => (
-                                                <li key={index}><a>{item}</a></li>
+                                                <li key={index}><a className='text-xs'>{item}</a></li>
                                             ))}
                                         </ul>
                                     </li>

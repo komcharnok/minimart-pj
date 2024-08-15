@@ -3,7 +3,7 @@ import React from 'react'
 function ListProduct() {
   return (
     <div className='mt-6'>
-      <h1 className='text-2xl font-semibold'>รายการสินค้า</h1>
+      <h1 className='lg:text-2xl font-semibold'>รายการสินค้า</h1>
       <div className='  flex items-center sm:gap-2 lg:gap-0 justify-between border rounded-xl shadow-md p-4 mt-4 mb-4'>
         <div className='flex items-center gap-4'>
           <input type="checkbox" defaultChecked className="checkbox checkbox-primary" />

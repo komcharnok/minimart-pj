@@ -2,8 +2,8 @@ import React from 'react'
 
 function Banner() {
     return (
-        <div className='mt-52 flex justify-center mx-auto'>
-            <div className="carousel w-[1362px] h-[506px] border rounded-xl ">
+        <div className='mt-44 flex justify-center mx-auto sm:px-4 xl:px-0'>
+            <div className="carousel  xl:w-[1362px] xl:h-[506px] border rounded-xl ">
                 <div id="item1" className="carousel-item w-full">
                     <img
                         src="https://images.pexels.com/photos/13099592/pexels-photo-13099592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

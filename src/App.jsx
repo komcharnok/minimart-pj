@@ -11,11 +11,11 @@ export default function App() {
     <>
       <div className="flex-1">
         {/* <HomePage /> */}
-        <div className="max-w-[1368px] mx-auto ">
+        <div className="">
           {/* <LoginPage/> */}
-          {/* <ProfilePage /> */}
           {/* <CartPage /> */}
-          <ConfirmorderPage/>
+          {/* <ProfilePage /> */}
+          {/* <ConfirmorderPage/> */}
         </div>
       </div>
     </>
