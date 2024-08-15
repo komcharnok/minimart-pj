@@ -9,7 +9,7 @@ import { useState } from 'react'
 function ProfilePage() {
   const [opentap, setOpentap] = useState('money');
   return (
-    <div className='mt-32 xl:w-[1368px]     mx-auto'>
+    <div className='mt-28 xl:w-[1368px] sm:w-[414px] lg:w-[1141px]     mx-auto'>
       <div className='sm:flex-row xl:flex xl:justify-between xl:py-6'>
         <div className='sm:flex-row  '>
           <div className='flex justify-center'>

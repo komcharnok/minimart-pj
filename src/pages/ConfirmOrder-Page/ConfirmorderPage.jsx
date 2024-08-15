@@ -5,11 +5,14 @@ import React from 'react'
 
 function ConfirmorderPage() {
   return (
-    <div className='mt-32  w-[1368px] h-auto mx-auto '>
-      <h1 className='text-4xl font-bold'>ยืนยันคำสั่งซื้อ</h1>
-      <ListProduct/>
-      <Address/>
-      <Pay/>
+    <div className='mt-28  xl:w-[1368px] sm:w-[414px] lg:w-[1141px]     mx-auto '>
+      <h1 className='sm:text-2xl sm:text-center lg:text-4xl font-bold'>ยืนยันคำสั่งซื้อ</h1>
+      <div className='sm:px-4 xl:px-0'>
+        <ListProduct />
+        <Address />
+        <Pay />
+      </div>
+
     </div>
   )
 }

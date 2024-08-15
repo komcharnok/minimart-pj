@@ -4,7 +4,7 @@ function Money({ opentap }) {
     return (
         <>
             {opentap === 'money' && (
-                <div className='px-6'>
+                <div className='p-6'>
                     <div className='flex justify-between xl:hidden'>
                         <h1>ยอดเงินคงเหลือ</h1>
                         <h1 className='xl:hidden font-semibold'>$99999</h1>

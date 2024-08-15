@@ -13,9 +13,9 @@ export default function App() {
         {/* <HomePage /> */}
         <div className="max-w-[1368px] mx-auto ">
           {/* <LoginPage/> */}
-          <ProfilePage />
+          {/* <ProfilePage /> */}
           {/* <CartPage /> */}
-          {/* <ConfirmorderPage/> */}
+          <ConfirmorderPage/>
         </div>
       </div>
     </>
