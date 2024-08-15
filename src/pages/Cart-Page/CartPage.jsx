@@ -24,7 +24,6 @@ function CartPage() {
             <div className='  flex items-center  justify-between border rounded-xl shadow-md  p-8 '>
               <h1 className='sm:text-xl lg:text-3xl '>ไม่มีสินค้าในตะกร้า</h1>              
             </div>
-
           </div>
 
           {/* สรุปคำสั่งซื้อ */}

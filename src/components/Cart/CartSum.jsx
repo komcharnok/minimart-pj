@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function CartSum() {
     return (
@@ -15,7 +16,9 @@ function CartSum() {
                 </div>
                 <p className='text-xs'>ราคานี้รวมภาษีมูลค่าเพิ่มแล้ว</p>
                 <div className='flex flex-col gap-3 mt-20'>
-                    <button className='btn btn-warning w-full rounded-3xl'>ชำระเงิน</button>
+                    <Link to='confirmorder'>
+                        <button className='btn btn-warning w-full rounded-3xl'>ชำระเงิน</button>
+                    </Link>
                     <button className='btn btn-outline w-full rounded-3xl'>เลือกสินค้าต่อ</button>
                 </div>
             </div>
